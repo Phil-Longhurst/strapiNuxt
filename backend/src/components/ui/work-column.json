@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_ui_work_columns",
+  "info": {
+    "displayName": "WorkColumn",
+    "icon": "align-justify",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "blog": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::blog.blog"
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}

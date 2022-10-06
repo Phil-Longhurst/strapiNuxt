@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_ui_child_links",
+  "info": {
+    "displayName": "ChildLink",
+    "icon": "ambulance"
+  },
+  "options": {},
+  "attributes": {
+    "page": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    }
+  }
+}

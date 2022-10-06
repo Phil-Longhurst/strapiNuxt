@@ -1,0 +1,135 @@
+.the-troupe {
+    background-color: $black;
+    color: $white;
+    &__title {
+        width: 100%;
+        margin: 0 0 100px 20px;
+        p {
+            position: absolute;
+        }
+        h1 {
+            line-height: 204px;
+        }
+        @media (max-width: $tablet) {
+            margin: 0 0 50px 0;
+            h1 {
+                font-size: 85px;
+                line-height: 128px;
+            }
+        }
+    }
+    &__departments {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 40px 0;
+        button {
+            margin: 0 10px 10px 0;
+            border: 2px solid black !important;
+            &.active {
+                border: 2px solid $white !important;
+            }
+            &:hover {
+                background-color: transparent !important;
+                border: 2px solid $white !important;
+                transition: ease .2s;
+                color: white !important;
+                font-weight: 500 !important;
+            }
+            &:focus {
+                border: 2px solid $white !important;
+                background-color: transparent !important;
+                color: white !important;
+                font-weight: 500 !important;
+            }
+        }
+        @media (max-width: $tablet) {
+           display: none;
+        }
+    }
+    &__dropdown {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        position: relative;
+    }
+    .archive__dropdown {
+            margin: 0 auto;
+            display: none;
+            @media (max-width: $tablet) {
+                display: block;
+             }
+            path {
+                stroke: $white;
+            }
+            &__list {
+                
+            }
+        }
+    .border-dark {
+        @media (max-width: $tablet) {
+            background: none;
+        }
+    }
+    .slider-troupe {
+        display: none;
+        .work-column {
+            @media (max-width: $tablet) {
+                display: block;
+                margin: 0;
+                &__image-container {
+                    max-height: 330px;
+                }
+            }
+        }
+        @media (max-width: $tablet) {
+            display: block;
+        }
+    }
+    .padding {
+        background-color: $black;
+        width: 100%;
+        height: 50px;
+    }
+    .work-column {
+        width: 22%;
+        margin: 0 18px 60px 18px;
+        @media (max-width: $laptop) {
+            width: 44%;
+        }
+        @media (max-width: $tablet) {
+            display: none;
+        }
+    }
+    .container {
+        padding: 100px 70px;
+        max-width: 1340px; 
+         @media (max-width: $tablet) {
+             padding: 50px 50px;
+         }
+     }
+     .slick-dots {
+        bottom: -50px;
+            .slick-active {
+                button {
+                    &::before {
+                        color: $design;
+                    }
+                }
+            }
+            button {
+                background-color: transparent;
+                &::before {
+                    width: 10px;
+                    height: 10px;
+                    color: #B9B9B9;
+                    font-size: 15px;
+                    &:focus {
+                        color: $design;
+                    }
+                }
+            }
+    }
+}

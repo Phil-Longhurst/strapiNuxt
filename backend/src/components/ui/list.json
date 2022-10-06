@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_ui_lists",
+  "info": {
+    "displayName": "List",
+    "icon": "american-sign-language-interpreting"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    }
+  }
+}

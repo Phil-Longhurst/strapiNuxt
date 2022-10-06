@@ -1,0 +1,66 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blogs",
+  "info": {
+    "singularName": "blog",
+    "pluralName": "blogs",
+    "displayName": "blogs",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "featuredImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    },
+    "dynamic_content": {
+      "type": "dynamiczone",
+      "components": [
+        "hero.hero-section",
+        "text-content.text-section",
+        "sliders.slider-clients",
+        "work.our-work",
+        "sliders.slider-services",
+        "tabs.tabs",
+        "text-content.text-img",
+        "hero.hero-service",
+        "hero.hero-scroll",
+        "text-content.text-columns",
+        "text-content.heading-basic",
+        "text-content.quote",
+        "text-content.quotes",
+        "data.stats",
+        "hero.hero-quote",
+        "social.social-icons",
+        "collection.collection-archive",
+        "tabs.tabs-horozontal",
+        "hero.hero-blog",
+        "title-text.title-text",
+        "text-content.title-text"
+      ]
+    },
+    "excerpt": {
+      "type": "richtext"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "inversedBy": "blogs"
+    }
+  }
+}

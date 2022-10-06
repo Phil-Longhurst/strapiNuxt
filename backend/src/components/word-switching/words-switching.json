@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_word_switching_words_switchings",
+  "info": {
+    "displayName": "words switching",
+    "icon": "arrow-alt-circle-up"
+  },
+  "options": {},
+  "attributes": {
+    "word": {
+      "type": "string"
+    }
+  }
+}

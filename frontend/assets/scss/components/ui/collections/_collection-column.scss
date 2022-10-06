@@ -1,0 +1,14 @@
+.collection-column {
+    width: 29%;
+    z-index: 2;
+    margin: 0 0 120px 0;
+    .s3 {
+        margin: 15px 0 0 0;
+    }
+    img {
+        background-color: lavender;
+        object-fit: cover;
+        height: 450px;
+        width: 100%;
+    }
+}

@@ -1,0 +1,10 @@
+.text-columns {
+    @include padding;
+    .text-column {
+        width: 30%;
+    }
+    h1 {
+        line-height: 172px;
+        margin-bottom: 90px;
+    }
+}

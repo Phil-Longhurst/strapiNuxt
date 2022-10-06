@@ -1,0 +1,52 @@
+{
+  "collectionName": "components_text_content_text_imgs",
+  "info": {
+    "displayName": "TextImg",
+    "icon": "align-left",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "textMiddle": {
+      "type": "boolean"
+    },
+    "textRight": {
+      "type": "boolean"
+    },
+    "themeDark": {
+      "type": "boolean"
+    },
+    "imageOffset": {
+      "type": "boolean"
+    },
+    "textWide": {
+      "type": "boolean"
+    },
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "richtext"
+    },
+    "btnText": {
+      "type": "string"
+    },
+    "btnUrl": {
+      "type": "string"
+    },
+    "tag": {
+      "type": "string"
+    }
+  }
+}

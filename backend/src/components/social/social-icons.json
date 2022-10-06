@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_social_social_icons",
+  "info": {
+    "displayName": "SocialIcons",
+    "icon": "apple-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "icons": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ui.icon-social"
+    }
+  }
+}

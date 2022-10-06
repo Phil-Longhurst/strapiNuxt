@@ -1,0 +1,71 @@
+.input-dropdown {
+    position: relative;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    .selected {
+      background-color: $black;
+      border-bottom: 2px solid white;
+      color: #ffffff;
+      cursor: pointer;
+      user-select: none;
+      font-weight: 300;
+      font-size: 16px;
+      font-family: "Poppins";
+    }
+    
+    .selected.open{
+      background-color: black;
+      border-bottom: 2px solid black;
+    }
+    
+    .selected:after {
+      position: absolute;
+      content: url("data:image/svg+xml,%3Csvg width='14' height='10' viewBox='0 0 14 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.82459 6.42895L7.00626 6.62115L7.18794 6.42895L12.0488 1.28669C12.4387 0.874164 13.0619 0.874164 13.4519 1.28669C13.8494 1.7072 13.8494 2.39142 13.4519 2.81193L7.70154 8.89517C7.31159 9.3077 6.68841 9.3077 6.29846 8.89517L0.548121 2.81193C0.150998 2.39181 0.150627 1.70847 0.547007 1.28787C0.940514 0.883498 1.5771 0.877673 1.96374 1.28669L6.82459 6.42895Z' fill='white' stroke='black' stroke-width='0.5'/%3E%3C/svg%3E");
+      right: 0px;
+    }
+  
+    .selected.open:after {
+      position: absolute;
+      content: url("data:image/svg+xml,%3Csvg width='14' height='10' viewBox='0 0 14 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.82459 6.42895L7.00626 6.62115L7.18794 6.42895L12.0488 1.28669C12.4387 0.874164 13.0619 0.874164 13.4519 1.28669C13.8494 1.7072 13.8494 2.39142 13.4519 2.81193L7.70154 8.89517C7.31159 9.3077 6.68841 9.3077 6.29846 8.89517L0.548121 2.81193C0.150998 2.39181 0.150627 1.70847 0.547007 1.28787C0.940514 0.883498 1.5771 0.877673 1.96374 1.28669L6.82459 6.42895Z' fill='white' stroke='black' stroke-width='0.5'/%3E%3C/svg%3E");
+      right: 0px;
+      transform: rotate(180deg);
+    }
+    
+    .items {
+      color: #ffffff;
+      overflow: hidden;
+      position: absolute;
+      background-color: $black;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      border-bottom: 2px solid white;
+      transition: all 0.5s;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+  
+    .items.open {
+      opacity: 1 !important;
+      visibility: visible !important;
+      pointer-events: all !important;
+    }
+    
+    .item{
+      color: #ffffff;
+      cursor: pointer;
+      user-select: none;
+      font-weight: 300;
+      font-size: 16px;
+      font-family: "Poppins";
+      margin: 10px 0;
+    }
+    
+    .selectHide {
+      display: none;
+    }
+}
+  
+  

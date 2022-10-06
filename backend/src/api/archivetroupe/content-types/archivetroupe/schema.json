@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "archivetroupes",
+  "info": {
+    "singularName": "archivetroupe",
+    "pluralName": "archivetroupes",
+    "displayName": "Archive Troupe"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

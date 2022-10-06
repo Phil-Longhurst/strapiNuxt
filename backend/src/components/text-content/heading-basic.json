@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_text_content_heading_basics",
+  "info": {
+    "displayName": "HeadingBasic",
+    "icon": "angle-double-left",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "caption": {
+      "type": "string"
+    },
+    "textMiddle": {
+      "type": "boolean"
+    },
+    "textRight": {
+      "type": "boolean"
+    },
+    "headingMiddle": {
+      "type": "boolean"
+    },
+    "headingRight": {
+      "type": "boolean"
+    },
+    "themeDark": {
+      "type": "boolean"
+    }
+  }
+}

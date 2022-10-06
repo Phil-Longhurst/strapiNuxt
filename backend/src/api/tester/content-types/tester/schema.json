@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "testers",
+  "info": {
+    "singularName": "tester",
+    "pluralName": "testers",
+    "displayName": "tester"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sdsd": {
+      "type": "string"
+    }
+  }
+}

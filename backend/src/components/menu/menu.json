@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_menu_menus",
+  "info": {
+    "displayName": "menu",
+    "icon": "arrow-down",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "page": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
+    },
+    "hasChildren": {
+      "type": "boolean"
+    },
+    "SubLink": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ui.child-link"
+    }
+  }
+}

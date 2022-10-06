@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_list_lists",
+  "info": {
+    "displayName": "list",
+    "icon": "clipboard-check"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    }
+  }
+}

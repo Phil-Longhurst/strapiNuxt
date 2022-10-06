@@ -1,0 +1,17 @@
+.slider-heading-scroll {
+    width: 100%;
+    .slick-slide {
+        margin: 0 20px;
+    }
+    .slick-track {
+        display: flex;
+        align-items: flex-end;
+        flex-wrap: nowrap;
+        height: min-content;
+        justify-content: center;
+        align-items: center;
+      }
+      .slick-list {
+          padding: 0 !important;
+    }
+}

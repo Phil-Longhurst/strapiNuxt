@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_text_content_text_columns",
+  "info": {
+    "displayName": "TextColumns",
+    "icon": "allergies",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "caption": {
+      "type": "string"
+    },
+    "columns": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ui.text-column"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_text_content_text_doubles",
+  "info": {
+    "displayName": "TextDouble",
+    "icon": "allergies",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ui.text-column"
+    },
+    "linkedin": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    }
+  }
+}

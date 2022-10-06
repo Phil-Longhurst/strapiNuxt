@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "departments",
+  "info": {
+    "singularName": "department",
+    "pluralName": "departments",
+    "displayName": "Department",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "troupes": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::troupe.troupe",
+      "inversedBy": "departments"
+    }
+  }
+}

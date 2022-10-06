@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_troupe_the_troupes",
+  "info": {
+    "displayName": "TheTroupe",
+    "icon": "arrow-circle-left",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "caption": {
+      "type": "string"
+    },
+    "troupe": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::troupe.troupe"
+    }
+  }
+}

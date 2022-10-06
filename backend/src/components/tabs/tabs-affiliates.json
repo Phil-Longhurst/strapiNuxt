@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_tabs_tabs_affiliates",
+  "info": {
+    "displayName": "TabsAffiliates",
+    "icon": "arrow-alt-circle-up",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "caption": {
+      "type": "string"
+    },
+    "Affiliates": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ui.affiliate"
+    }
+  }
+}

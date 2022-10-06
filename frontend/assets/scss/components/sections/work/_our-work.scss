@@ -1,0 +1,41 @@
+.our-work {
+    @include padding;
+    background-color: $white;
+    height: auto;
+    &__caption {
+        position: absolute;
+        top: 15%;
+        @media (max-width: $tablet) {
+            top: 5%;
+        }
+    }
+    .half-color {
+        background-color: $black;
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+        height: 375px;
+        transform: translateY(-100px);
+        @media (max-width: $tablet) {
+            height: 257px;
+            transform: translateY(-75px);
+        }
+        @media (max-width: 510px) {
+            height: 280px;
+            transform: translateY(-76px);
+        }
+    }
+    &__title {
+        h1, p {
+            z-index: 2;
+        }
+        h1 {
+            margin: 0 0 20px;
+            @media (max-width: $tablet) {
+                font-weight: 300;
+                font-size: 84px;
+                line-height: 126px;
+            }
+        }
+    }
+}

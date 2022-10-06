@@ -1,0 +1,40 @@
+{
+  "kind": "singleType",
+  "collectionName": "archiveworks",
+  "info": {
+    "singularName": "archivework",
+    "pluralName": "archiveworks",
+    "displayName": "Archive Work ",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sliderTitle": {
+      "type": "string"
+    },
+    "clients": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "clients_dark": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

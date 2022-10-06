@@ -1,0 +1,16 @@
+.heading-basic {
+    padding: 100px 0 0 0;
+    &.theme-dark {
+        background-color: $black;
+        color: $white;
+    }
+    p {
+        position: absolute
+    }
+    @media (max-width: $tablet) {
+        h1 {
+            font-size: 75px;
+            line-height: 128px;
+        }
+    }
+}

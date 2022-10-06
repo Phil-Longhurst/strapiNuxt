@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_hero_hero_scrolls",
+  "info": {
+    "displayName": "HeroScroll",
+    "icon": "ambulance",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "section": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ui.text-basic"
+    }
+  }
+}

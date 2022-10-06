@@ -1,0 +1,44 @@
+.slider-affiliates {
+    width: 100%;
+    display: none;
+    @media (max-width: $tablet) {
+        display: block;
+    }
+    &__item {
+        border-radius: 5px;
+        padding: 0 30px;
+        @media (max-width: $tablet) {
+            padding: 0 10px;
+        }
+        &-item {
+            box-shadow: rgb(0 0 0 / 7%) 0px 0px 20px 6px;
+            padding: 30px;
+            margin: 40px 0;
+        }
+        img {
+            margin: 0 auto;
+        }
+    }
+    .slick-dots {
+        bottom: -50px;
+            .slick-active {
+                button {
+                    &::before {
+                        color: $design;
+                    }
+                }
+            }
+            button {
+                background-color: transparent;
+                &::before {
+                    width: 10px;
+                    height: 10px;
+                    color: #B9B9B9;
+                    font-size: 15px;
+                    &:focus {
+                        color: $design;
+                    }
+                }
+            }
+    }
+}

@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_title_text_title_texts",
+  "info": {
+    "displayName": "Title Text",
+    "icon": "angle-double-down"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

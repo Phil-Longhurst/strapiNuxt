@@ -1,0 +1,13 @@
+.collection-archive {
+    &.light {
+        background-color: $black;
+        color: $white;
+    }
+    &.dark {
+        background-color: $black;
+        color: $white;
+    }
+    button {
+        margin: 50px 0;
+    }
+}

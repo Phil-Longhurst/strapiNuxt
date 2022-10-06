@@ -1,0 +1,137 @@
+.archive {
+    @include padding;
+    background-color: $white;
+    .jsb {
+        &::after {
+            content: "";
+            width: 29%;
+        }
+    }
+    &.archive-work {
+        padding-top: 0;
+    }
+    .container {
+        position: relative;
+    }
+    .work-column {
+        margin: 90px 0 0 0;
+    }
+    &__dropdown {
+        font-size: 18px;
+        font-weight: 400;
+        padding: 7px;
+        svg {
+            transform: scale(-1);
+            width: 14px;
+            height: 12px;
+            margin: 0 0 0 10px;
+        }
+        &__list {
+            position: absolute;
+            top: 100%;
+            background-color: $black;
+            border: 2px solid $black;
+            padding: 20px 25px; 
+            z-index: 3; 
+            display: none;
+            &:hover {
+                display: block;  
+                &, svg {
+                    transform: scale(1);
+                    transition: ease 0.2s;
+                }
+            }
+            li {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 27px;
+                list-style: none;
+                color: $white;
+                margin: 0 0 10px 0;
+                padding: 7px 20px;
+                transition: ease .2s;
+                &:hover {
+                    cursor: pointer;
+                    transition: ease .2s;
+                    color: $black;
+                    background-color: $white;
+                }
+            }
+        }
+        &:hover {
+            & + .archive__dropdown__list {
+                display: block;  
+            }
+            // svg {
+            //     transform: scale(1);
+            //     transition: ease 0.2s;
+            // }
+            cursor: pointer;
+            display: block;
+        }
+    }
+    &__theme {
+        width: 54px;
+        height: 23px;
+        background-color: $black;
+        border-radius: 11.5px;
+        position: absolute;
+        right: 30px;
+        padding: 4px;
+        display: flex;
+        align-items: center;
+        div {
+            background-color: $white;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+        }
+        .light-on {
+            position: absolute;
+            left: 4px;
+        }
+        .light-off {
+            position: absolute;
+            right: 4px; 
+        }
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    // theme colors
+    &.active {
+        background-color: $black;
+        color: $white;
+        .clients {
+            background-color: $black;
+            h1 {
+                color: $white;
+            }
+        }
+        .archive {
+            &__dropdown {
+                path {
+                    stroke: $white;
+                }
+            }
+            &__theme {
+                justify-content: flex-end;
+                background-color: $white;
+                div {
+                    background-color: $black;
+                }
+            }
+        }
+    }
+    &__breadcrumb {
+        position: absolute;
+        top: 150px;
+        span {
+            color: $design;
+            margin: 0 6px;
+        }
+        @media (max-width: $tablet) {
+            display: none;
+         }
+    }
+}

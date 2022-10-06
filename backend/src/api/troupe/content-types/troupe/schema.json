@@ -1,0 +1,77 @@
+{
+  "kind": "collectionType",
+  "collectionName": "troupes",
+  "info": {
+    "singularName": "troupe",
+    "pluralName": "troupes",
+    "displayName": "Troupe",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "role": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "slug": {
+      "type": "string"
+    },
+    "dynamic_content": {
+      "type": "dynamiczone",
+      "components": [
+        "hero.hero-blog",
+        "hero.hero-quote",
+        "hero.hero-scroll",
+        "hero.hero-section",
+        "hero.hero-service",
+        "hero.hero-work",
+        "sliders.slider-clients",
+        "sliders.slider-services",
+        "tabs.tabs-horozontal",
+        "tabs.tabs",
+        "text-content.heading-basic",
+        "text-content.quote",
+        "text-content.quotes",
+        "text-content.text-columns",
+        "text-content.text-img",
+        "text-content.text-section",
+        "text-content.title-text",
+        "work.our-work",
+        "text-content.text-double"
+      ]
+    },
+    "bio": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ui.text-column"
+    },
+    "linkedin": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "departments": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::department.department",
+      "inversedBy": "troupes"
+    }
+  }
+}

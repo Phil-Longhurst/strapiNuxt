@@ -1,0 +1,27 @@
+.hero-general {
+    @include padding;
+    background-color: $black;
+    color: $white;
+    &__text {
+        margin: 50px 0 100px 0;
+        max-width: 750px;
+    }
+    &__title {
+        h1 {
+            line-height: 190px;
+            @media (max-width: $tablet) {
+                font-size: 85px;
+                line-height: 127px;
+            }
+        }
+        p {
+            position: absolute;
+        }
+    }
+    img {
+        margin: auto;
+        width: 100%;
+        max-width: 700px;
+        object-fit: cover;
+    }
+}

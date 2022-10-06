@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_sliders_slider_clients",
+  "info": {
+    "displayName": "Clients",
+    "icon": "arrow-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slider_image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "caption": {
+      "type": "string"
+    },
+    "black_background": {
+      "type": "boolean"
+    }
+  }
+}

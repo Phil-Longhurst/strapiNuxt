@@ -1,0 +1,71 @@
+.hero-blog {
+    background-color: $black;
+    height: 708px;
+    color: $white;
+    @include padding;
+    @media (max-width: $tablet) {
+        background-color: $white;
+        color: $black;
+        height: auto;
+    }
+     .container {
+        position: unset;
+        @media (max-width: $tablet) {
+            padding: 0;
+            h3,p {
+                padding: 0 30px 0;
+            }
+         }
+     }
+    &__text {
+        width: 48%;
+        h3 {
+            margin: 0 0 40px 0;
+            @media (max-width: $tablet) {
+                margin: 60px 0 40px 0;
+                font-weight: 500;
+                font-size: 28px;
+                line-height: 42px;
+             }
+        }
+        &-desk {
+            @media (max-width: $tablet) {
+                display: none;
+             }
+        }
+        &-mob {
+            display: none;
+            text-align: center;
+            margin: 30px 0 0 0;
+            @media (max-width: $tablet) {
+                display: block;
+             } 
+        }
+        @media (max-width: $tablet) {
+           width: 100%;
+           text-align: center;
+        }
+    }
+    img {
+        width: 48%;
+        object-fit: cover;
+        max-height: 500px;
+        right: 0;
+        position: absolute;
+        @media (max-width: $tablet) {
+            width: 100%;
+            position: relative;
+        }
+    }
+    &__breadcrumb {
+        position: absolute;
+        top: 150px;
+        span {
+            color: $design;
+            margin: 0 6px;
+        }
+        @media (max-width: $tablet) {
+            display: none;
+         }
+    }
+}

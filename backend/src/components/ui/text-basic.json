@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_ui_text_basics",
+  "info": {
+    "displayName": "text-basic",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "richtext"
+    }
+  }
+}

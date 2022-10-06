@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_tabs_vacancies",
+  "info": {
+    "displayName": "Vacancies",
+    "icon": "arrow-circle-down",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "caption": {
+      "type": "string"
+    },
+    "tabs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ui.tab-content"
+    }
+  }
+}

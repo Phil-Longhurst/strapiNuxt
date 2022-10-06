@@ -1,0 +1,99 @@
+.single-troupe {
+    background-color: $white;
+    color: $black;
+    overflow: hidden;
+    .archive__theme {
+        right: 30px;
+        position: absolute;
+        z-index: 2;
+    }
+    .archive__breadcrumb {
+        position: relative;
+        top: unset;
+    }
+    .text-column {
+        margin: 30px 0 0 0;
+    }
+    &__header {
+        width: 100%;
+        padding: 20px 0;    
+        position: relative;
+    }
+    &__hero {
+        padding: 66px 0 100px 0;
+        .container {
+            @media (max-width: $laptop) {
+                flex-direction: column-reverse;
+                padding: 0;
+            }
+        }
+        &__text {
+            width: 46%;
+            margin: 0 0 30px 0;
+            @media (max-width: $laptop) {
+                width: 100%;
+                padding: 0 30px;
+            }
+        }
+        &__title {
+            margin: 0 0 65px 0;
+            @media (max-width: $laptop) {
+                margin: 30px 0 65px 0;
+                text-align: center;
+                h3 {
+                    font-weight: 500;
+                    font-size: 28px;
+                    line-height: 42px;
+                }
+                p {
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 24px; 
+                }
+            }
+        }
+        &__social {
+            margin: 60px 0 0 0;
+            display: flex;
+            p {
+                margin: 0 0 0 10px;
+            }
+            a {
+                text-decoration: underline;
+                color: $design;
+            }
+        }
+    }
+    img {
+        width: calc(50%);
+        position: absolute;
+        transform: translateX(30px);
+        object-fit: cover;
+        right: 0;
+        background-color: lavender;
+        @media (max-width: $laptop) {
+            object-position: center;
+            width: 100%;
+            transform: translateX(0px);
+            height: 400px;
+            position: relative;
+            @media (max-width: $tablet) {
+                height: 250px;
+            }
+        }
+    }
+    // theme colors
+    &.active {
+        background-color: $black;
+        color: $white;
+        .archive {
+            &__theme {
+                justify-content: flex-end;
+                background-color: $white;
+                div {
+                    background-color: $black;
+                }
+            }
+        }
+    }
+}

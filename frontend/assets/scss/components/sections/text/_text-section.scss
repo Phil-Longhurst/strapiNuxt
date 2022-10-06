@@ -1,0 +1,6 @@
+.text-section {
+    @include padding;
+    p {
+        max-width: 760px;
+    }
+}

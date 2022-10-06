@@ -1,0 +1,214 @@
+.hero-scroll {
+    height: auto;
+    background-color: $black;
+    color: $white ;
+    position: relative;
+    @include padding;
+    overflow: hidden;
+    .OurMission {
+        z-index: 2;
+    }
+    .wrapper {
+        width: 400%;
+        height: 100vh;
+        display: flex;
+        flex-wrap: nowrap;
+        position: relative;
+        @media (max-width: $tablet) {
+            display: none;
+        }
+    }
+    .wrapper-mob {
+        width: 100%;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        position: relative;
+        display: none;
+        @media (max-width: $tablet) {
+            display: flex;
+        }
+        .hero-scroll__title {
+            text-align: center;
+            p {
+                display: none;
+            }
+            .CenterLight {
+                position: absolute;
+                left: -50px;
+                transform: scale(0.7) translateX(-170px);
+                @media (max-width: $tablet) {
+                    transform: scale(0.6) translateX(-230px);
+                }
+            }
+        }
+        .hero-scroll__panel {
+            &-mob {
+                z-index: 3;
+                p {
+                    z-index: 3;
+                }
+            }   
+            &__text-mob {
+                padding: 0 30px;
+                margin: 30px 0;
+                max-width: 340px;
+                background-color: $black;
+                @media (max-width: $tablet) {
+                    padding: 20px 0;
+                    margin: 80px 0;
+                }
+            }
+        }
+    }
+    // lines
+    .line {
+        width: 0;
+        opacity: 1;
+        height: 10px;
+        background-color: $white;
+        position: absolute;
+        top: calc(50%);
+        z-index: 2;
+        float: left;
+        &-dotted {
+            border-right: 2px dotted $white;
+            color: #fff;
+            opacity: 1;
+            height: 0;
+            position: absolute;
+            left: calc(50% - 1px);
+            z-index: 2;
+        }
+        &-mob {
+            width: 2px;
+            opacity: 1;
+            height: 0;
+            background-color: $white;
+            position: absolute;
+            left: calc(50% - 1px);
+            z-index: 2;
+            &__circle {
+                background-color: $white;
+                border-radius: 50%;
+                width: 10px;
+                height: 10px;
+                position: absolute;
+                left: calc(50% - 3px);
+                top: calc(100%);
+            }
+        }
+        &-notch {
+            background-color: $white;
+            width: 10px;
+            height: 40px;
+            opacity: 0;
+            transform: translateY(-15px); 
+            position: absolute;
+        }
+    }
+    &__title {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        transform: translateY(-100px);
+        z-index: 3;
+        @media (max-width: $tablet) {
+            transform: translateY(0px);
+        }
+        h2,p {
+            z-index: 3;
+            white-space: nowrap;
+            position: relative;
+        }
+        h2 {
+            @media (max-width: $tablet) {
+                font-size: 65px;
+                line-height: 127px;
+            }
+            @media (max-width: 400px) {
+                font-size: 45px;
+                line-height: 127px;
+            }
+            background-color: transparent;
+        }
+        p {
+            position: absolute;
+            bottom: 0;
+        } 
+    }
+    &__panel {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        text-align: center;
+        color: $white;
+        position: relative;
+        box-sizing: border-box;
+        padding: 10px;
+        flex-direction: row;
+        background-color: $black;
+        .CenterLight {
+            position: absolute;
+            bottom: -150px;
+            left: -10px;
+        }
+        div {
+            display: flex;
+            justify-content: center;
+        }
+        &.odd .hero-scroll__panel__text {
+            transform: translateY(-200px);
+        }
+        &.even .hero-scroll__panel__text {
+            transform: translateY(200px);
+        }
+        &__text {
+            text-align: left;
+            opacity: 0;
+            z-index: 3;
+            p {
+                max-width: 320px;
+            }
+        }
+        &__first {
+            width: 100%;
+            padding: 0 6% 0 5%  ;
+        }
+        &__final {
+            z-index: 4;
+            background-color: $black;
+            padding: 20px 0 30px;
+            @media (max-width: $tablet) {
+                transform: translateY(75px);
+            }
+            p {
+                font-weight: 500;
+                margin: 0 0 0 10px;
+                transform: translatey(9px) translateX(300px);
+                opacity: 0;
+            }
+        }
+    }
+}
+
+.StageLight {
+    position: absolute;
+    left: 0px;
+    z-index: 1;
+    transform: translate(-100px, -20px) scale(1.4) rotate(-10deg);
+    transform-origin: top left;
+}
+
+.StageLightTwo {
+    // position: absolute;
+    // left: 0px;
+    // z-index: 1;
+    // transform: translate(-100px, -20px) scale(1.4) rotate(-10deg);
+    // transform-origin: top left;
+}

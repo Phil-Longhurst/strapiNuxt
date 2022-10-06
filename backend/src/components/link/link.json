@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_link_links",
+  "info": {
+    "displayName": "link",
+    "icon": "arrows-alt-v"
+  },
+  "options": {},
+  "attributes": {
+    "link": {
+      "type": "string"
+    },
+    "text": {
+      "type": "string"
+    }
+  }
+}

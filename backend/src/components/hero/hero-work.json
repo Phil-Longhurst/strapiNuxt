@@ -1,0 +1,49 @@
+{
+  "collectionName": "components_hero_hero_works",
+  "info": {
+    "displayName": "HeroWork",
+    "icon": "ambulance",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subTitle": {
+      "type": "string"
+    },
+    "subText": {
+      "type": "richtext"
+    },
+    "text": {
+      "type": "richtext"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "involved": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ui.list"
+    },
+    "industry": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ui.list"
+    },
+    "Visit": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ui.list"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_hero_hero_sections",
+  "info": {
+    "displayName": "HeroSection",
+    "icon": "american-sign-language-interpreting",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "video": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "title_text": {
+      "displayName": "Title Text",
+      "type": "component",
+      "repeatable": true,
+      "component": "title-text.title-text"
+    },
+    "title": {
+      "type": "string"
+    },
+    "word_switching": {
+      "displayName": "words switching",
+      "type": "component",
+      "repeatable": true,
+      "component": "word-switching.words-switching"
+    }
+  }
+}

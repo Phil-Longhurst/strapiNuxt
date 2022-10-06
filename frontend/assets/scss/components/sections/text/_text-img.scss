@@ -1,0 +1,46 @@
+.text-img {
+    @include padding;
+    .container {
+        position: relative;
+    }
+    &__text {
+        display: flex;
+        z-index: 2;
+        &__tag {
+            margin: 0 20px 0 0;
+            p {
+                line-height: 42px;
+            }
+        }
+        &__content {
+            max-width: 320px;
+            .s1 {
+                margin: 0 0 15px 0;
+            }
+        }
+    }
+    &__img {
+        img {
+            position: absolute;
+            &.right {
+                right: 0;
+            }
+            &.left {
+                left: 0;
+            }
+            &.unset {
+                right: unset;
+            }
+            &.offset {
+
+            }
+        }
+        @media (max-width: $tablet) {
+            display: none;
+        }
+    }
+    &.theme-dark {
+        background-color: $black;
+        color: $white;
+    }
+}

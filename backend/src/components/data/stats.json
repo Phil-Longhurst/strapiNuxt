@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_data_stats",
+  "info": {
+    "displayName": "Stats",
+    "icon": "angle-down"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "caption": {
+      "type": "string"
+    }
+  }
+}

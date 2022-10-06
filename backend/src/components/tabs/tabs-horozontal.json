@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_tabs_tabs_horozontals",
+  "info": {
+    "displayName": "TabsHorozontal",
+    "icon": "allergies"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    }
+  }
+}

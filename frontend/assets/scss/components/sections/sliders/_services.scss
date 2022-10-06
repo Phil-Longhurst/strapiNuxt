@@ -1,0 +1,101 @@
+.services {
+    @include padding;
+
+    .dotted-line {
+        display: none;
+        @media (max-width: 1230px) {
+            display: block;
+            height: 1057px;
+            top: 30px;
+            position: absolute;
+            z-index: -1;
+            right: 15px;
+        }
+        @media (max-width: 1060px) {
+            height: 956px;
+            width: 1100px;
+            right: -850px;
+        }
+        @media (max-width: 480px) {
+            top: 0;
+            right: -360px;
+            height: 700px;
+            width: 600px;
+            bottom: 130px;
+            background-size: 70px 10px, 70px 10px, 10px 70px, 10px 70px;
+        }
+        @media (max-width: 410px) {
+            right: -320px;
+        }
+    }
+
+    .container {
+        @media (max-width: 1060px) {
+            display: initial;
+        }
+        @media (max-width: 1230px) {
+            &.border-light {
+                background: none;
+            }
+        }
+    }
+
+    &__title {
+        text-align: right;
+        width: 100%;
+        margin: 0 55px 100px 0;
+        position: relative;
+
+        @media (max-width: 1060px) {
+            margin: 0 55px 50px 0;
+        }
+
+        @media (max-width: 480px) {
+            background-color: white;
+        }
+
+        h1 {
+            @media (max-width: 1230px) {
+                text-align: left;
+            }
+
+            @media (max-width: 1060px) {
+                font-size: 110px;
+                margin-left: 20px;
+            }
+
+            @media (max-width: 480px) {
+               line-height: initial;
+               font-size: 85px;
+            }
+        }
+
+        p {
+            position: absolute;
+            right: 11px;
+            bottom: 40px;
+
+            @media (max-width: 1230px) {
+                right: initial;
+                left: 730px;
+                bottom: 40px;
+                text-align: left;
+            }
+
+            @media (max-width: 1060px) {
+                left: 400px;
+                bottom: 70px;
+                right: 0;
+            }
+
+            @media (max-width: 560px) {
+                left: 400px;
+            }
+
+            @media (max-width: 480px) {
+                left: 300px;
+                bottom: 5px;
+            }
+        }
+    }
+}

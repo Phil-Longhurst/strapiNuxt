@@ -1,0 +1,63 @@
+{
+  "kind": "collectionType",
+  "collectionName": "affiliates",
+  "info": {
+    "singularName": "affiliate",
+    "pluralName": "affiliates",
+    "displayName": "Affiliates",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "featuredImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "excerpt": {
+      "type": "richtext"
+    },
+    "dynamic_content": {
+      "type": "dynamiczone",
+      "components": [
+        "data.stats",
+        "hero.hero-blog",
+        "hero.hero-quote",
+        "hero.hero-scroll",
+        "hero.hero-section",
+        "hero.hero-service",
+        "hero.hero-work",
+        "sliders.slider-clients",
+        "sliders.slider-services",
+        "tabs.tabs-affiliates",
+        "tabs.tabs-horozontal",
+        "tabs.tabs",
+        "text-content.heading-basic",
+        "text-content.quote",
+        "text-content.quotes",
+        "text-content.text-columns",
+        "text-content.text-double",
+        "text-content.text-img",
+        "text-content.text-section",
+        "text-content.title-text",
+        "troupe.the-troupe",
+        "work.our-work"
+      ]
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_text_content_heading_scrolls",
+  "info": {
+    "displayName": "HeadingScroll",
+    "icon": "anchor"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

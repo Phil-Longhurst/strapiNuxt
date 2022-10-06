@@ -1,0 +1,15 @@
+.text-column {
+    // width: 30%;
+    display: flex;
+    &__tag {
+        margin: 0 20px 0 0;
+        p {
+            line-height: 42px;
+        }
+    }
+    &__content {
+        .s1 {
+            margin: 0 0 15px 0;
+        }
+    }
+}

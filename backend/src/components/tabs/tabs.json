@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_tabs_tabs",
+  "info": {
+    "displayName": "Tabs",
+    "icon": "align-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "tab": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ui.tab-content"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_collection_collection_archives",
+  "info": {
+    "displayName": "CollectionArchive",
+    "icon": "baby-carriage",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "columns": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ui.collection-column"
+    }
+  }
+}

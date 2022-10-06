@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_work_our_works",
+  "info": {
+    "displayName": "OurWork",
+    "icon": "angry",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "btn": {
+      "type": "string"
+    },
+    "divider": {
+      "type": "boolean"
+    },
+    "caption": {
+      "type": "string"
+    },
+    "titleRight": {
+      "type": "boolean"
+    },
+    "works": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::work.work"
+    },
+    "btnUrl": {
+      "type": "string"
+    }
+  }
+}
